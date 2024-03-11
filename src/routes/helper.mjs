@@ -5,10 +5,4 @@ const success = (message, data) => {
     };
 };
 
-const getUniqueId = () => {
-    const productsIds = products.map((product) => product.id);
-    const maxId = productsIds.reduce((a, b) => Math.max(a, b));
-    return maxId + 1;
-};
-
-export { success, getUniqueId };
+export { success };
